@@ -1,0 +1,56 @@
+# Domain Scout - .gitignore
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Output files
+results.csv
+*.csv
+
+# Test and debug files
+test_*.rb
+debug_*.rb
+investigate_*.rb
+
+# Ruby/Bundler
+.bundle/
+vendor/bundle
+.rbenv-version
+.ruby-version
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# Data files (keep structure, ignore content)
+data/*.csv
+data/*.json
+data/*.txt
+!data/.keep
+
+# Config files that might contain secrets
+config/secrets.yml
+config/database.yml
+
+results.csv

@@ -1,8 +1,8 @@
-# Domain Scout 🚀
+# Domain Scout 
 
 A Ruby CLI tool that generates brandable domain names and checks their availability in real-time. Uses OpenAI GPT for creative generation with intelligent keyword-based fallback.
 
-## Features ✨
+## Features 
 
 - **Smart Domain Generation**: Uses OpenAI GPT-3.5 for creative, brandable domain names
 - **Real-time Availability Checking**: Uses `whois` to check actual domain availability
@@ -12,7 +12,7 @@ A Ruby CLI tool that generates brandable domain names and checks their availabil
 - **Retry Logic**: Automatically tries different prompts if no domains are available
 - **Rate Limit Handling**: Graceful handling of API limits
 
-## Quick Start 🏃‍♂️
+## Quick Start 
 
 ```bash
 # Clone the repository
@@ -32,7 +32,7 @@ ruby run.rb sports 5
 ruby run.rb ai_automation 10
 ```
 
-## Installation 📦
+## Installation 
 
 ### Prerequisites
 - Ruby 3.0+ 
@@ -55,7 +55,7 @@ cp .env.example .env
 # OPENAI_API_KEY=your_key_here
 ```
 
-## Usage 💻
+## Usage 
 
 ### Basic Usage
 ```bash
@@ -79,12 +79,12 @@ ruby run.rb finance_fintech 8       # 8 fintech domains
 
 ### Output Example
 ```
-🚀 Domain Scout starting...
+ Domain Scout starting...
    Category: sports
    Target: 5 domains
    Max retries: 3
 
-🔄 Attempt 1/3
+ Attempt 1/3
 📝 Using prompt: "Fantasy sports app domain names"
 🤖 Generating domains with GPT...
    ✅ GPT generated 5 domains
@@ -107,7 +107,7 @@ fantasycore2024.com: AVAILABLE
    3. fantasycore2024.com
 ```
 
-## Configuration ⚙️
+## Configuration 
 
 ### Environment Variables
 Create a `.env` file in the project root:
@@ -126,7 +126,7 @@ my_category:
   - "Another creative prompt"
 ```
 
-## How It Works 🔧
+## How It Works 
 
 1. **Prompt Selection**: Randomly selects a prompt from the specified category
 2. **Domain Generation**: 
@@ -136,14 +136,14 @@ my_category:
 4. **Results Export**: Saves all results to `results.csv` with metadata
 5. **Retry Logic**: If no available domains found, tries different prompts (up to 3 attempts)
 
-## API Usage & Costs 💰
+## API Usage & Costs 
 
 - Uses OpenAI GPT-3.5-turbo (very cost-effective)
 - Typical cost: ~$0.001-0.002 per domain generation batch
 - **Works without API key** - uses keyword-based generation as fallback
 - Includes rate limiting and quota handling
 
-## Output Files 📄
+## Output Files 
 
 ### results.csv
 Complete log of all domain checks:
@@ -153,7 +153,7 @@ sportspulse.com,taken,sports,Fantasy sports app domain names,2024-01-15 10:30:25
 fantasyhub24.com,AVAILABLE,sports,Fantasy sports app domain names,2024-01-15 10:30:26
 ```
 
-## Development 🛠️
+## Development 
 
 ### Project Structure
 ```
@@ -188,7 +188,7 @@ your_category:
   - "Another creative prompt for your category"
 ```
 
-## Troubleshooting 🔍
+## Troubleshooting 
 
 ### Common Issues
 
@@ -210,7 +210,7 @@ your_category:
 - The tool generates brandable names, some popular ones may be taken
 - Increase domain count to get more options
 
-## Contributing 🤝
+## Contributing 
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/your-feature`
@@ -220,11 +220,11 @@ your_category:
 6. Push: `git push origin feature/your-feature`
 7. Create a Pull Request
 
-## License 📄
+## License 
 
 MIT License - see LICENSE file for details.
 
-## Acknowledgments 🙏
+## Acknowledgments 
 
 - Built with [ruby-openai](https://github.com/alexrudall/ruby-openai) gem
 - Uses OpenAI GPT-3.5 for creative domain generation
@@ -232,15 +232,15 @@ MIT License - see LICENSE file for details.
 
 ---
 
-**Happy domain hunting!** 🎯
+**Happy domain hunting!** 
 
 If you find this tool useful, please give it a ⭐ on GitHub!
 
-- 🤖 **GPT-Powered Generation**: Uses OpenAI's GPT to generate creative domain names
-- 🔍 **Real Domain Checking**: Uses `whois` command to check actual domain availability  
-- 🔁 **Smart Retry Logic**: Automatically retries with different prompts if no domains are available
-- 📊 **CSV Export**: Saves all results with timestamps for easy review
-- ⚡ **Fast & Simple**: Command-line interface for quick domain research
+-  **GPT-Powered Generation**: Uses OpenAI's GPT to generate creative domain names
+-  **Real Domain Checking**: Uses `whois` command to check actual domain availability  
+-  **Smart Retry Logic**: Automatically retries with different prompts if no domains are available
+-  **CSV Export**: Saves all results with timestamps for easy review
+-  **Fast & Simple**: Command-line interface for quick domain research
 
 ## Quick Start
 
@@ -374,4 +374,4 @@ domain_scout/
 
 ---
 
-Built for quick domain research and brainstorming! 🎯
+Built for quick domain research and brainstorming! 

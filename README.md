@@ -126,6 +126,45 @@ my_category:
   - "Another creative prompt"
 ```
 
+## Automated Domain Hunting (Cron Jobs)
+
+Domain Scout includes a cron runner for automated domain discovery:
+
+### Quick Setup
+```bash
+# Make the cron script executable
+chmod +x cron_runner.sh
+
+# Add to your crontab (run every 10 minutes)
+crontab -e
+```
+
+Add this line to run every 10 minutes:
+```
+*/10 * * * * /Users/ramin/Desktop/domain_scout/cron_runner.sh
+```
+
+### Features
+- **Automatic Category Rotation**: Randomly selects from different categories
+- **Comprehensive Logging**: Logs all runs to `logs/` directory
+- **Smart Cleanup**: Keeps last 50 log files
+- **Available Domain Alerts**: Counts and logs when domains are found
+- **macOS Notifications**: Optional desktop notifications (uncomment in script)
+
+### Monitoring
+```bash
+# View recent logs
+ls -la logs/
+
+# Check for available domains
+grep "AVAILABLE" logs/cron_run_*.log
+
+# Monitor in real-time
+tail -f logs/cron_run_*.log
+```
+
+See [CRON_SETUP.md](CRON_SETUP.md) for detailed configuration options.
+
 ## How It Works 
 
 1. **Prompt Selection**: Randomly selects a prompt from the specified category

@@ -16,7 +16,7 @@ A Ruby CLI tool that generates brandable domain names and checks their availabil
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/domain-scout.git
+git clone https://github.com/rsedighi/domain-scout.git
 cd domain-scout
 
 # Install dependencies
@@ -42,7 +42,7 @@ ruby run.rb ai_automation 10
 ### Setup
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/domain-scout.git
+git clone https://github.com/rsedighi/domain-scout.git
 cd domain-scout
 
 # Install Ruby dependencies
